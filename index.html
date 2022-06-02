@@ -121,31 +121,33 @@
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        #2 Git en local
+                        #2 Git Flow / Workflow
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <h5>Introduction</h5>
                         <p>Maintenant que tu connais les bases de ce qu'est git et comment créer un dépôt GitHub, il est
-                            temps d'apprendre comment nous pouvons utiliser git sur notre machine locale.</p>
+                            temps d'apprendre comment nous pouvons utiliser git plus en détail.</p>
 
                         <h5 class="mt-4">💪 À la fin de cet exercice, tu seras en mesure de :</h5>
                         <ul class="list-unstyled ms-5">
                             <li>✅ Comprendre la <strong>structure d'un dépôt Git local</strong> (répertoire de travail,
                                 répertoire intermédiaire, dépôt)</li>
-                            <li>✅ Créer des branches et te déplacer d'une branche à l'autre</li>
+                            <li>✅ Créer une branche via Git CLI</li>
+                            <li>✅ Te déplacer d'une branche à l'autre</li>
+                            <li>✅ Suivre le flow GitHub en utilisant Git</li>
                         </ul>
 
-                        <h5 class="text-center mt-4">Anatomie d'un dépôt local Git</h5>
-                        <h6>Théorie :</h6>
-                        <p>Contrairement à GitHub, qui est un site Web, Git est un logiciel que tu installes sur ton
-                            ordinateur.
-                            Puisque tout se passe sur ton ordinateur, nous parlons de Git local.
+                        <h5 class="text-center mt-4">👽 Anatomie d'un dépôt local Git</h5>
+                        <p class="text-center">Contrairement à GitHub, qui est un site Web, Git est un logiciel que tu
+                            installes sur ton
+                            ordinateur. <br>
+                            Puisque tout se passe sur ton ordinateur, nous parlons de Git local. <br>
                             Voici la structure typique d'un dépôt sur ta machine locale selon Git :
                         </p>
-                        <h5 class="mt-4">Structure locale Git</h5>
+                        <h5 class="text-center mt-4">👀 Structure locale Git</h5>
                         <div class="row text-center">
                             <div class="col-12">
                                 <img src="./assets/images/git-local.png" alt="git local schema" class="img-fluid">
@@ -157,12 +159,72 @@
                                     allowfullscreen></iframe>
                             </div>
                         </div>
+                        <h5 class="mt-4">😎 Pourquoi suivre un flow ?</h5>
+                        <div>
+                            <p>
+                                Un flow (parfois aussi appelé workflow) est une série d'étapes que les membres de
+                                l'équipe
+                                doivent suivre pour compléter une tâche. <br>
+                                Dans notre cas, la tâche consiste à apporter des modifications au code d'un projet
+                                web.<br><br>
+
+                                S'entendre sur les étapes à suivre permet à plusieurs personnes de s'organiser. En
+                                effet,
+                                une telle approche :
+                            <p>
+                            <ul>
+                                <li>Minimise le risque de conflits, car elle empêche plusieurs
+                                    développeurs de travailler sur le même code en même temps</li>
+                                <li>Facilite le contrôle du code produit par chaque développeur.euse, ce qui assure la
+                                    qualité du
+                                    projet (ceci est fait par l'utilisation de pull requests).</li>
+                            </ul>
+
+                            <p>Nous allons découvrir progressivement le flow GitHub qui te servira dans tes
+                                futurs projets. <br>
+                                Ensuite, tu verras comment effectuer certaines des mêmes opérations (création de
+                                branches)
+                                via Git, en lignes de commande sur ta machine.</p>
+                            <p>
+                                Enfin, tu suivras à nouveau le flow GitHub, mais cette fois en utilisant ce que tu as
+                                appris sur Git.
+                            </p>
+                            <p>👀 Créer des branches / se déplacer d'une branche à l'autre en ligne de commande : <a
+                                    href="https://devconnected.com/create-git-branch/#:~:text=The%20easiest%20way%20to%20create,branch%20you%20want%20to%20create.&text=To%20achieve%20that%2C%20you%20will,feature%E2%80%9D%20as%20the%20branch%20name."
+                                    target="_blank">How To Create a Git Branch</a> </p>
+                        </div>
+
+                        <h5 class="mt-5">🎤 flow GitHub : introduction</h5>
+                        <p>
+                            GitHub fonctionne grâce à un système de branches.
+                            Pour avoir une première idée de ce dont il s'agit, lis cet article (uniquement la partie
+                            "Yes, Master" et le premier paragraphe de la partie "Branching Out").
+                        </p>
+                        <p class="alert alert-dark">
+                            <i class="fa-solid fa-computer"></i> Travailler avec les branches de Git et GitHub <a
+                                href="https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/"
+                                target="_blank">ici</a>. <br>
+                            <i class="fa-solid fa-computer"></i> Découvre ensuite comment les branches sont
+                            utilisées dans le flow GitHub en suivant ce
+                            <a href="https://docs.github.com/en/get-started/quickstart/hello-world"
+                                target="_blank">tutoriel</a>.
+                        </p>
+                        <p>Félicitations, tu viens de suivre le flow de GitHub pour la première fois ! <br>
+                            Lorsque tu as terminé, dans le repo GitHub que tu as créé en suivant le tutoriel, clique sur
+                            le bouton Insights puis sur Network pour accéder à un historique visuel de ton projet. <br>
+                            Comme sur l'exemple ci-dessous, tu pourras voir la branche que tu as créée à partir de ta
+                            branche main, le commit que tu as fait sur cette branche et ensuite la fusion avec la
+                            branche main. <br>
+                            Le network graph est un moyen simple de visualiser les branches créée dans ton repo GitHub -
+                            il devrait t'être utile pendant ta vie de développeur !</p>
 
                         <h5 class="mt-5">💻 Défis :</h5>
                         <ul>
-                            <li>A partir du projet précédent, créé une nouvelle branche depuis main nommée dev</li>
+                            <li>A partir du projet helloDesCodeuses, créé une nouvelle branche depuis main nommée dev
+                            </li>
                             <li>Ajoute un fichier style.css</li>
-                            <li>Enregistre et pousse tes modifications vers le depot distant (pense à toujours regarder ce que repond git quand tu executes une commande)</li>
+                            <li>Enregistre et pousse tes modifications vers le depot distant (pense à toujours regarder
+                                ce que repond git quand tu executes une commande)</li>
                             <li>Bonus : Créé une pull request de la branche dev vers main sur GitHub</li>
                             <li>Partage moi le lien de ton dépôt Github comme solution à ce défis</li>
                         </ul>
@@ -176,16 +238,44 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        #3 Git remote
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="headingFour">
+                        #5 Merge & Conflits
                     </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-
+                        wip
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        #6 Revert
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        wip
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        #7 Aller plus loin avec Git
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        wip
                     </div>
                 </div>
             </div>
@@ -292,13 +382,13 @@
                         => git --version (Le résultat doit être git version 2.**.*) <br>
                         <a href="https://git-scm.com/download/mac" target="_blank">Installer Git sur Mac</a>
                     </p>
-                    
+
                     <h6>OS Windows</h6>
                     <p>
                         Pour windows, tu dois installer un nouveau terminal git bash : <br>
                         <a href="https://git-scm.com/download/win" target="_blank">Installer Git sur Windows</a>
                         Pas besoin d'installer l'interface graphique GUI (dans les options), seulement le bash
-                        
+
                     </p>
                 </div>
                 <div class="modal-footer">
