@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git/Github</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f9cf54aa18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="container mt-5">
+        <h5 class="mt-4">🤓 Pré-requis :</h5>
+        <ul class="list-unstyled ms-5">
+            <li>✅ Avoir un compte <a href="https://github.com" target="_blank">Github</a></li>
+            <li>✅ Avoir ajouté une clé
+                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#ssh-modal">
+                    ssh
+                </button> à son compte github
+            </li>
+            <li>✅ <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#git-modal">
+                    git
+                </button> est installé sur la machine</li>
+            <li>✅ Cours Git/GitHub (<a
+                    href="https://drive.google.com/drive/u/0/folders/1w6alpPzK_cuWqE_I7DByabc7fE_oX1Sv">Drive
+                    DesCodeuses</a>)</li>
+        </ul>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        #1 Découvre GitHub
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5>Introduction</h5>
+                        <p>Lorsque tu travailles sur un projet de développement Web, tu travailleras, la plupart du
+                            temps, avec d'autres développeur·euses sur le même projet en même temps.
+                            Tu devras également suivre les différentes modifications apportées à ton code.
+                            Dans cette exercice, nous allons parler de git, de GitHub et de la façon dont tu peux
+                            utiliser
+                            ces 2 services pour collaborer et conserver un historique de tes projets.</p>
+
+                        <h5 class="mt-4">💪 À la fin de cet exercice, tu seras en mesure de :</h5>
+                        <ul class="list-unstyled ms-5">
+                            <li>✅ Comprendre ce qu'est la <strong>gestion de projet</strong></li>
+                            <li>✅ <strong>Créer un dépôt en local & l'héberger sur Github</strong></li>
+                            <li>✅ Ajouter des commits (contributions) à ton dépôt</li>
+                            <li>✅ <strong>Afficher l'historique des commits</strong> sur GitHub & dans ton terminal</li>
+                        </ul>
+
+                        <h5 class="mt-4 text-center">🕹 C'est parti !</h5>
+                        <div class="row mt-2">
+                            <p class="text-center">Commençons par une petite vidéo sur Github :</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/noZnOSpcjYY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="text-center mt-5">😇 Premiers pas avec Github :</h5>
+                        <p class="text-center">Suis cette vidéo pour apprendre à créer un dépôt et à démarrer avec
+                            Github :</p>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe
+                                src="https://jumpshare.com/embed/GDeLnP75Q7xLSWsYJuv1" frameborder="0"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                        </div>
+
+                        <h5 class="mt-5">📌 En résumé :</h5>
+                        <ul>
+                            <li>Git est un système de contrôle de version</li>
+                            <li>Git t'aide à conserver l'historique de tes fichiers et à fournir des outils pour
+                                travailler en équipe sur les mêmes fichiers</li>
+                            <li>Github est une plateforme en ligne qui propose des services tels que l'hébergement
+                                de code mais c'est aussi un lieu social où tu peux participer à des projets open
+                                source, partager et découvrir de nouveaux projets.</li>
+                        </ul>
+
+                        <h5 class="mt-5">💻 Défis :</h5>
+                        <ul>
+                            <li>Créé un dossier nommé 'helloDesCodeuses' et à l'interieur créé un index.html avec
+                                une structure de base</li>
+                            <li>Héberge le dossier helloDesCodeuses sur ton Github</li>
+                            <li>Dans index.html ajoute maintenant un title à ton site puis commit ce changement et
+                                pousse ton travail sur Github</li>
+                            <li>Toujours dans index.html, ajoute maintenant un contenu de ton choix (img,
+                                paragraphe, lien, etc), à nouveaux enregistre et pousse ton code sur Github</li>
+                            <li>Exécute la commande <code>git log</code> (qui permet de lister l'historique de tes
+                                commits) puis fais un screenshot de ce que ça te renvoie</li>
+                            <li>Ajoute le screenshot à ton projet, à nouveau commit et pousse les modifations</li>
+                            <li>Tu peux aussi consulter l'historique de tes commits directement dans github, à toi de
+                                trouver à quel endroit</li>
+                            <li>Partage moi le lien de ton dépôt Github comme solution à ce défis</li>
+                        </ul>
+
+                        <h5 class="mt-5">🧐 Critères de validation :</h5>
+                        <ul>
+                            <li>Le lien soumis fait référence à un dépôt Github appelé "helloDesCodeuses".</li>
+                            <li>L'historique du fichier index.html montre au moins trois commits, chacun avec une
+                                description
+                                du changement, si possible en anglais.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        #2 Git en local
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5>Introduction</h5>
+                        <p>Maintenant que tu connais les bases de ce qu'est git et comment créer un dépôt GitHub, il est
+                            temps d'apprendre comment nous pouvons utiliser git sur notre machine locale.</p>
+
+                        <h5 class="mt-4">💪 À la fin de cet exercice, tu seras en mesure de :</h5>
+                        <ul class="list-unstyled ms-5">
+                            <li>✅ Comprendre la <strong>structure d'un dépôt Git local</strong> (répertoire de travail,
+                                répertoire intermédiaire, dépôt)</li>
+                            <li>✅ Créer des branches et te déplacer d'une branche à l'autre</li>
+                        </ul>
+
+                        <h5 class="text-center mt-4">Anatomie d'un dépôt local Git</h5>
+                        <h6>Théorie :</h6>
+                        <p>Contrairement à GitHub, qui est un site Web, Git est un logiciel que tu installes sur ton
+                            ordinateur.
+                            Puisque tout se passe sur ton ordinateur, nous parlons de Git local.
+                            Voici la structure typique d'un dépôt sur ta machine locale selon Git :
+                        </p>
+                        <h5 class="mt-4">Structure locale Git</h5>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <img src="./assets/images/git-local.png" alt="git local schema" class="img-fluid">
+                            </div>
+                            <div class="col-12 mt-5">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3a2x1iJFJWc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <h5 class="mt-5">💻 Défis :</h5>
+                        <ul>
+                            <li>A partir du projet précédent, créé une nouvelle branche depuis main nommée dev</li>
+                            <li>Ajoute un fichier style.css</li>
+                            <li>Enregistre et pousse tes modifications vers le depot distant (pense à toujours regarder ce que repond git quand tu executes une commande)</li>
+                            <li>Bonus : Créé une pull request de la branche dev vers main sur GitHub</li>
+                            <li>Partage moi le lien de ton dépôt Github comme solution à ce défis</li>
+                        </ul>
+
+                        <h5 class="mt-5">🧐 Critères de validation :</h5>
+                        <ul>
+                            <li>Le lien soumis fait référence à un dépôt Github appelé "helloDesCodeuses".</li>
+                            <li>Il y a deux branches : main et dev</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        #3 Git remote
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Modal SSH -->
+    <div class="modal fade" id="ssh-modal" tabindex="-1" aria-labelledby="ssh-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ssh-modal-label">Avant toute chose : la connexion SSH</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>GitHub a récemment modifié sa politique concernant les questions de sécurité. Ainsi, à partir du
+                        13 août 2021, il est obligatoire d'utiliser une authentification de type "SSH" lors de
+                        l'utilisation de Git en coordination avec GitHub.</p>
+                    <h6>Création de clés SSH</h6>
+                    <p>Pour cela, tu dois donc en premier lieu créer une paire de clés SSH. Par chance, GitHub propose
+                        un tuto écrit complet que tu peux trouver <a
+                            href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"
+                            target="_blank">ici</a>. Suis simplement les instructions des deux sections "Generating a
+                        new SSH key" et "Adding your SSH key to the ssh-agent".</p>
+                    <p>Les instructions que tu as suivies dans ce tuto ont généré 2 fichiers dans le dossier .ssh de ton
+                        ordinateur (remonte l'historique de ton terminal pour connaître l'endroit exacte où ton
+                        ordinateur à mis les fichiers):</p>
+                    <ul>
+                        <li>id_rsa : c'est la clé privée, il ne faut <strong>JAMAIS</strong> la partager avec qui que ce
+                            soit, elle ne doit exister que sur ton ordinateur</li>
+                        <li>id_rsa.pub : c'est la clé publique que tu vas partager sur GitHub en suivant les
+                            instructions dans l'étape suivante de l'exercice.</li>
+                    </ul>
+                    <h6>Configuration de github</h6>
+                    <p>Maintenant que tu as créé tes clés SSH, il faut que tu configures ton compte GitHub pour y
+                        ajouter ta clé publique. Là encore, GitHub propose un tuto complet que tu peux retrouver <a
+                            href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
+                            target="_blank">ici</a>. Suis correctement les instructions pas à pas, et tu devrais être
+                        bien partie pour travailler avec Git et GitHub!</p>
+
+                    <p class="alert alert-primary">Tu peux enregistrer plusieurs clés SSH sur ton compte GitHub. Par
+                        exemple, si tu utilises Git et GitHub sur plusieurs machines différentes, alors il te faudra
+                        répéter ces instructions sur chacun de tes ordinateurs, afin qu'ils aient tous leurs propre clés
+                        SSH liées à ton compte GitHub</p>
+
+                    <h6>Et maintenant ?</h6>
+                    <p>À partir de maintenant, lorsque l'on te demandera de paramétrer un dépôt distant en utilisant
+                        <br><code>git remote add origin 'URL_DE_TON_DEPOT_GITHUB'</code> ou <br>
+                        <code>git clone 'URL_DE_TON_DEPOT_GITHUB'</code> <br>, l'url que tu devras renseigner à la place
+                        de 'URL_DE_TON_DEPOT_GITHUB' n'est pas celle que tu as l'habitude d'utiliser.
+                        Chaque dépôt GitHub possède en réalité deux types d'adresses :
+                    </p>
+                    <ul>
+                        <li>L'une commence par https:// : c'est celle que tu as l'habitude de voir dans la barre
+                            d'adresse de ton navigateur. Lorsque tu utilises cette adresse là (par exemple en lançant
+                            git remote add origin https://github.com/ton-pseudo-github/ton-projet.git dans ton dépôt Git
+                            local), ton dépôt sera configuré pour utiliser une connexion "classique", et tu devras
+                            renseigner ton nom d'utilisateur et ton mot de passe à chaque fois que tu veux faire un git
+                            push, par exemple, ce qui est peu pratique. De plus, comme dit plus haut, cette technique
+                            d'authentification est dépréciée à compter du 13 août 2021.</li>
+                        <li>L'autre commence par git@github.com: : c'est celle que tu devras utiliser par la suite.
+                            Lorsque tu utilises cette adresse là (par exemple en lançant git clone
+                            git@github.com:ton-pseudo-github/ton-projet.git dans ton dépôt Git local), ton dépôt sera
+                            configuré pour utiliser l'authentification SSH grâce à la clé que tu as créée et configurée
+                            dans GitHub dans les étapes précédentes. Grâce à l'authentification SSH, plus besoin de
+                            rentrer ton nom d'utilisateur et ton mot de passe, le prossessus d'authentification se fait
+                            automatiquement (et c'est bien plus pratique comme ça 👌 ).</li>
+                    </ul>
+                    <p>Pour retrouver l'adresse git@github.com: d'un dépôt, rends toi simplement sur le dépôt en
+                        question sur GitHub, et clique sur le bouton vert "Code". Sélectionne ensuite "SSH", copie
+                        l'adresse indiquée, et voilà !</p>
+                    <img src="./assets/images/screenshot-ssh-url.png" alt="screenshot depuis github" class="img-fluid">
+
+                    <h6 class="mt-5">Authentification SSH</h6>
+                    <p>Pour plus d'informations sur le fonctionnement de l'authentification SSH : <a
+                            href="https://www.ssh.com/ssh/public-key-authentication" target="_blank">SSH
+                            documentation</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal GIT -->
+    <div class="modal fade" id="git-modal" tabindex="-1" aria-labelledby="git-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ggit-modal-label">Installer git sur ton système</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>OS sur Linux :</h6>
+                    <p>Sur Linux, git pourrait déjà être installé. Vérifie en entrant cette commande dans ton terminal
+                        => git --version (Le résultat doit être git version 2.**.*)
+                        Sinon, tu vas devoir l'installer par toi même. <br>
+                        <a href="https://git-scm.com/download/linux" target="_blank">Installer Git sur Linux</a>
+                    </p>
+                    <h6>OS Mac</h6>
+                    <p>
+                        Vérifie en entrant cette commande dans ton terminal que Git n'est pas déjà installé
+                        => git --version (Le résultat doit être git version 2.**.*) <br>
+                        <a href="https://git-scm.com/download/mac" target="_blank">Installer Git sur Mac</a>
+                    </p>
+                    
+                    <h6>OS Windows</h6>
+                    <p>
+                        Pour windows, tu dois installer un nouveau terminal git bash : <br>
+                        <a href="https://git-scm.com/download/win" target="_blank">Installer Git sur Windows</a>
+                        Pas besoin d'installer l'interface graphique GUI (dans les options), seulement le bash
+                        
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
